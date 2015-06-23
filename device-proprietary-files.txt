@@ -1,0 +1,5 @@
+# matisse3g blobs
+
+#Radio
+lib/libsec-ril.so
+lib/libsecril-client.so
