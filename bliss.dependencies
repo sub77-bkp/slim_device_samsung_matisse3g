@@ -1,0 +1,22 @@
+[
+  {
+    "repository": "SlimRoms/device_samsung_qcom-common",
+    "target_path": "device/samsung/qcom-common",
+    "branch": "lp5.1"
+  },
+  {
+    "repository": "sub77-bkp/kernel_samsung_matisse",
+    "target_path": "kernel/samsung/matisse",
+    "branch": "lp5.1"
+  },
+  {
+    "repository": "SlimRoms/hardware_samsung",
+    "target_path": "hardware/samsung",
+    "branch": "lp5.1"
+  },
+  {
+    "repository": "sub77-bkp/device_samsung_matisse-common",
+    "target_path": "device/samsung/matisse-common",
+    "branch": "lp5.1"
+  }
+]
