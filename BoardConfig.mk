@@ -32,3 +32,16 @@ TARGET_OTA_ASSERT_DEVICE := matisse3g,matisse3gxx,531,SM-T531
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/matisse3g/mkbootimg.mk
 TARGET_KERNEL_VARIANT_CONFIG := msm8226-sec_matisse3g_defconfig
 
+# BlissPop Configs
+TARGET_TC_ROM := 4.9-sm
+TARGET_TC_KERNEL := 4.9-sm
+BLISSIFY := true
+BLISS_O3 := true
+BLISS_STRICT := true
+BLISS_GRAPHITE := true
+BLISS_KRAIT := true
+BLISS_PIPE := true
+TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
+
+-include vendor/bliss/config/sm.mk
