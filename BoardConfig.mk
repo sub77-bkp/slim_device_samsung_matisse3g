@@ -27,7 +27,7 @@ include device/samsung/matisse-common/BoardConfigCommon.mk
 -include vendor/samsung/matisse3g/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := matisse3g,matisse3gxx,531,SM-T531
+#TARGET_OTA_ASSERT_DEVICE := matisse3g,matisse3gxx,531,SM-T531
 
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/matisse3g/mkbootimg.mk
 TARGET_KERNEL_VARIANT_CONFIG := msm8226-sec_matisse3g_defconfig

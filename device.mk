@@ -23,3 +23,9 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Inherit from matisse-common
 $(call inherit-product, device/samsung/matisse-common/matisse-common.mk)
 
+PRODUCT_PACKAGES += \
+    CellBroadcastReceiver
+
+# Samsung
+PRODUCT_PACKAGES += \
+    SamsungServiceMode
