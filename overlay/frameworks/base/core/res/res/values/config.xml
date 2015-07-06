@@ -25,4 +25,7 @@
     <!-- This device does allow sms service. -->
     <bool name="config_sms_capable">true</bool>
 
+    <!-- Is the device LTE capable -->
+    <bool name="config_lte_capable">false</bool>
+
 </resources>
