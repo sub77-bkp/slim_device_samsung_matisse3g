@@ -18,10 +18,7 @@
 $(call inherit-product-if-exists, vendor/samsung/matisse3g/matisse3g-vendor.mk)
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
-# Inherit from matisse-common
-$(call inherit-product, device/samsung/matisse-common/matisse-common.mk)
+DEVICE_PACKAGE_OVERLAYS += device/samsung/matisse3g/overlay
 
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
@@ -29,3 +26,19 @@ PRODUCT_PACKAGES += \
 # Samsung
 PRODUCT_PACKAGES += \
     SamsungServiceMode
+
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.crda.sh \
+    init.qcom.bt.sh
+
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.qcom.rc \
+    init.qcom.usb.rc \
+    ueventd.qcom.rc \
+    init.carrier.rc \
+    init.traget.rc
+
+# Inherit from matisse-common
+$(call inherit-product, device/samsung/matisse-common/matisse-common.mk)
